@@ -92,6 +92,17 @@ Once the VM is running, SSH into it using:
 You’ll authenticate using the SSH key you added in the cloud-init
 config.
 
+You man run the `lscpu` command to see details on the emulated CPU.
+
+    $ lscpu
+    Architecture:             s390x
+      CPU op-mode(s):         32-bit, 64-bit
+      Byte Order:             Big Endian
+    CPU(s):                   16
+      On-line CPU(s) list:    0-15
+    Vendor ID:                IBM/S390
+      Machine type:           8561
+
 ### Step 5: Install Apache Maven and a JDK
 
 As prerequisites to run Apache Karaf we’ll need to install Apache Maven,

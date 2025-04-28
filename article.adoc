@@ -110,6 +110,19 @@ ssh -p 2222 ubuntu@localhost
 ----
 You'll authenticate using the SSH key you added in the cloud-init config.
 
+You man run the `lscpu` command to see details on the emulated CPU.
+[bash]
+----
+$ lscpu
+Architecture:             s390x
+  CPU op-mode(s):         32-bit, 64-bit
+  Byte Order:             Big Endian
+CPU(s):                   16
+  On-line CPU(s) list:    0-15
+Vendor ID:                IBM/S390
+  Machine type:           8561
+----
+
 ==== Step 5: Install Apache Maven and a JDK
 
 As prerequisites to run Apache Karaf we'll need to install Apache Maven, and a JDK to the system. We'll also need to setup our MAVEN_HOME, JAVA_HOME, and PATH environment variables.
