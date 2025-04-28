@@ -126,10 +126,10 @@ illustrate this setup we can write an env_setup.sh script containing:
 
     MVN_HOME=/home/ubuntu/x1/apache-maven-3.9.9/bin
 
-    JAVA_HOME=/home/ubuntu/x1/jdk-21.0.7+6/bin
+    JAVA_HOME=/home/ubuntu/x1/jdk-21.0.7+6
 
-    PATH=$MVN_HOME:$JAVA_HOME:$PATH
-    export PATH MAVEN_OPTS
+    PATH=$MVN_HOME:$JAVA_HOME/bin:$PATH
+    export PATH MAVEN_OPTS JAVA_HOME
 
 ### Step 6: Install Apache Karaf
 
