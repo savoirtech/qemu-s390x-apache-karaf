@@ -78,6 +78,11 @@ Run the VM using qemu-system-s390x:
 | netdev | configures network device (maps host port 2222 to VM port 22) |
 | device | configure virtual io |
 
+Note: By default the cloud image will have around 2.2 GB disk available,
+if you need more space you can run the following command:
+
+    qemu-img resize ubuntu-22.04-server-cloudimg-s390x.img +2G
+
 ### Step 4: Connect via SSH
 
 Once the VM is running, SSH into it using:
