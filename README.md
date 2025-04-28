@@ -66,6 +66,18 @@ Run the VM using qemu-system-s390x:
       -netdev user,id=net0,hostfwd=tcp::2222-:22 \
       -device virtio-net-pci,netdev=net0
 
+|  |  |
+|----|----|
+| Command | Description |
+| qemu-system-s390x | Qeme system for emulating s390x |
+| m | RAM size in Megabytes |
+| cpu | max Enables all features supported by the accelerator in the current host |
+| smp | number of processor cores |
+| drive | sets up files representing disk |
+| nographic | No GUI |
+| netdev | configures network device (maps host port 2222 to VM port 22) |
+| device | configure virtual io |
+
 ### Step 4: Connect via SSH
 
 Once the VM is running, SSH into it using:
