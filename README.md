@@ -69,7 +69,7 @@ Run the VM using qemu-system-s390x:
 |  |  |
 |----|----|
 | Command | Description |
-| qemu-system-s390x | Qeme system for emulating s390x |
+| qemu-system-s390x | Qemu system for emulating s390x |
 | m | RAM size in Megabytes |
 | cpu | max Enables all features supported by the accelerator in the current host |
 | smp | number of processor cores |

@@ -78,7 +78,7 @@ qemu-system-s390x \
 |===
 | Command | Description
 | qemu-system-s390x
-| Qeme system for emulating s390x
+| Qemu system for emulating s390x
 | m
 | RAM size in Megabytes
 | cpu
